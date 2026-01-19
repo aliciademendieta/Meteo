@@ -5,36 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Meteo App</title>
   </head>
   <body>
-    <header>
-      <form>
-        <input type="search" placeholder="Enter a city..." required />
-        <input type="submit" value="search" />
-      </form>
-    </header>
-    <main>
-      <div>
-        <h1>Paris</h1>
-        <p>
-          Tuesday 18:47, scattered clouds
-          <br />
-          Humidity:98%, Wind: 4km/h
-        </p>
-      </div>
-      <div>☁️8°C</div>
-    </main>
+    <div class="weather-app">
+      <header>
+        <form>
+          <input type="search" placeholder="Enter a city..." required />
+          <input type="submit" value="search" />
+        </form>
+      </header>
+      <main>
+        <div>
+          <h1>Paris</h1>
+          <p>
+            Tuesday 18:47, scattered clouds
+            <br />
+            Humidity:98%, Wind: 4km/h
+          </p>
+        </div>
+        <div class="weather-app">🌡️8°C</div>
+      </main>
 
-    <footer>
-      Built by
-      <a href="https://github.com/aliciademendieta" target="_blank"> Alice </a>
-      and hosted on
-      <a href="https://github.com/aliciademendieta/Meteo" target="_blank">
-        GitHub
-      </a>
-      and website hosted on
-      <a href="https://meteobyalice.netlify.app/" target="_blank"> Netlify </a>
-    </footer>
+      <footer>
+        Built by
+        <a href="https://github.com/aliciademendieta" target="_blank">
+          Alice
+        </a>
+        and hosted on
+        <a href="https://github.com/aliciademendieta/Meteo" target="_blank">
+          GitHub
+        </a>
+        and website hosted on
+        <a href="https://meteobyalice.netlify.app/" target="_blank">
+          Netlify
+        </a>
+      </footer>
+    </div>
   </body>
 </html>
