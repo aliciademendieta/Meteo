@@ -3,6 +3,9 @@ function handleSearchSubmit(event) {
   let searchInput = document.querySelector("#search-form-input");
   let cityElement = document.querySelector("#city");
   cityElement.innerHTML = searchInput.value;
+
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = "12";
 }
 
 let searchFormElement = document.querySelector("#search-form");
