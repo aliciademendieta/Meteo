@@ -2,15 +2,14 @@ function refreshWeather(response) {
   let temperatureElement = document.querySelector("#temperature");
   let temperature = response.data.temperature.current;
   let cityElement = document.querySelector("#city");
-  cityElement.innerHTML = searchInput.value;
 
-  cityElement = response.data.city;
+  cityElement.innerHTML = response.data.city; // ✅ Fixed
   temperatureElement.innerHTML = Math.round(temperature);
 }
+
 function searchCity(city) {
   let apiKey = "f83b3aab3t1362d26064coa2bc970a7f";
-  let apiUrl =
-    "https://api.shecodes.io/weather/v1/current?query={city}&key={apiKey}&units=metric";
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
   axios.get(apiUrl).then(refreshWeather);
 }
 
@@ -23,3 +22,5 @@ function handleSearchSubmit(event) {
 
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
+
+searchCity("Biarritz");
